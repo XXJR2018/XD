@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AppraiseSuccessCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qkF-cf-R8F">
+                        <rect key="frame" x="5" y="10" width="115" height="115"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="115" id="oUR-Oj-GoG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12盒/箱 婴儿家庭家用柔纸" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZe-YM-sml">
+                        <rect key="frame" x="5" y="130" width="115" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="JFI-7L-rxj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFS-GM-kVK">
+                        <rect key="frame" x="5" y="170" width="115" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zVA-ci-vaZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.70588235290000001" green="0.1137254902" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qkF-cf-R8F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="6ei-3D-LUG"/>
+                <constraint firstItem="PFS-GM-kVK" firstAttribute="top" secondItem="eZe-YM-sml" secondAttribute="bottom" id="KPs-VD-had"/>
+                <constraint firstItem="PFS-GM-kVK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="MlS-r3-onk"/>
+                <constraint firstAttribute="trailing" secondItem="eZe-YM-sml" secondAttribute="trailing" constant="5" id="NfW-Lk-uks"/>
+                <constraint firstAttribute="trailing" secondItem="PFS-GM-kVK" secondAttribute="trailing" constant="5" id="Xaf-a0-Tem"/>
+                <constraint firstItem="qkF-cf-R8F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ZRz-w7-USr"/>
+                <constraint firstAttribute="trailing" secondItem="qkF-cf-R8F" secondAttribute="trailing" constant="5" id="aS1-yu-a7M"/>
+                <constraint firstItem="eZe-YM-sml" firstAttribute="top" secondItem="qkF-cf-R8F" secondAttribute="bottom" constant="5" id="f4N-yy-BCw"/>
+                <constraint firstItem="eZe-YM-sml" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="znX-HM-PpS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="185" height="130"/>
+            <connections>
+                <outlet property="goodsNameLabel" destination="eZe-YM-sml" id="n64-b1-sEY"/>
+                <outlet property="priceLabel" destination="PFS-GM-kVK" id="epj-8b-2vI"/>
+                <outlet property="productImgView" destination="qkF-cf-R8F" id="CDf-9b-gfP"/>
+                <outlet property="productImgViewLayoutHeight" destination="oUR-Oj-GoG" id="ng4-Ew-KK4"/>
+            </connections>
+            <point key="canvasLocation" x="240.80000000000001" y="178.11094452773614"/>
+        </collectionViewCell>
+    </objects>
+</document>

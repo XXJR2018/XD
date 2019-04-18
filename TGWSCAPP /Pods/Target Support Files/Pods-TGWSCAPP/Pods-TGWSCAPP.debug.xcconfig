@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/UMCAnalytics" "${PODS_ROOT}/UMCCommon" "${PODS_ROOT}/UMCSecurityPlugins/thirdparties"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/JPush" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/MJRefresh" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/UMCAnalytics" "${PODS_ROOT}/Headers/Public/UMCCommon" "${PODS_ROOT}/Headers/Public/UMCSecurityPlugins" "${PODS_ROOT}/Headers/Public/WechatOpenSDK"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_ROOT}/JCore" "${PODS_ROOT}/JPush" "${PODS_ROOT}/WechatOpenSDK/WeChatSDK1.8.3"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/JPush" -isystem "${PODS_ROOT}/Headers/Public/MBProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/MJRefresh" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/UMCAnalytics" -isystem "${PODS_ROOT}/Headers/Public/UMCCommon" -isystem "${PODS_ROOT}/Headers/Public/UMCSecurityPlugins" -isystem "${PODS_ROOT}/Headers/Public/WechatOpenSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"MBProgressHUD" -l"MJRefresh" -l"SDWebImage" -l"WeChatSDK" -l"c++" -l"jcore-ios-1.2.5" -l"jpush-ios-3.1.1" -l"resolv" -l"sqlite3" -l"sqlite3.0" -l"z" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "ImageIO" -framework "QuartzCore" -framework "Security" -framework "SecurityEnvSDK" -framework "SystemConfiguration" -framework "UIKit" -framework "UMAnalytics" -framework "UMCommon" -framework "UTDID" -weak_framework "UserNotifications"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

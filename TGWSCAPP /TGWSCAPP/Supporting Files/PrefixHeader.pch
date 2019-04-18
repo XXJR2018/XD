@@ -1,0 +1,84 @@
+//
+//  PrefixHeader.pch
+//  DDGAPP
+//
+//  Created by Cary on 15/2/27.
+//  Copyright (c) 2015年 Cary. All rights reserved.
+//
+
+#ifndef DDGAPP_PrefixHeader_pch
+#define DDGAPP_PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif
+
+
+#import "AppDelegate.h"
+#import "CustomNavigationBarView.h"
+#import "CommonViewController.h"
+
+
+#import "Header.h"
+#import "ToolsUtlis.h"
+#import "PDAPI.h"
+#import "CCWebViewController.h"
+#import "CommonInfo.h"
+
+
+
+#import <UMCommon/UMCommon.h>
+#import <UMAnalytics/MobClick.h>
+#import <JPUSHService.h>
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import <MBProgressHUD.h>
+#import <MJRefresh.h>
+#import <WatchKit/WatchKit.h>
+
+#import "DDGUserInfoEngine.h"
+#import "DDGAFRequestManager.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "DDGAFHTTPRequestOperation.h"
+#import "JsonResult.h"
+#import "DDG_Blocks.h"
+#import "UserDefaultKeys.h"
+#import "DDGJsonParseFieldKeys.h"
+#import "DDGCategories.h"
+#import "DDGConstants.h"
+#import "DDGAccountManager.h"
+#import "DDGSetting.h"
+#import "DDGError.h"
+#import "Enums.h"
+#import "ThirdPartyMacro.h"
+#import "ResourceManager.h"
+#import "LanguageManager.h"
+#import "PDNotifications.h"
+#import "BaseController.h"
+#import "XXJRCellBackgroundView.h"
+#import "MBProgressHUD+PD.h"
+#import "XXJRInfoCoverView.h"
+#import "XXJRModalView.h"
+#import "XXJRNetWorkCoverView.h"
+#import "CSAnimationView.h"
+#import "DDGShareManager.h"
+#import "APPConstants.h"
+#import "DDGAssert.h"
+#import "JSONKit.h"
+
+#import "ShopModel.h"
+#import "CDWAlertView.h"
+
+
+
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#ifndef __OPTIMIZE__
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+
+#endif
+
+#endif

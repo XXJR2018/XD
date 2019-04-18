@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TGWSCAPP' do
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    # use_frameworks!
+    
+    #pod下载SDK支持版本设置
+    platform :ios, "10.0"
+    
+    pod "SDWebImage"
+    pod "MBProgressHUD"
+    pod "MJRefresh"
+    pod "WechatOpenSDK"
+    pod "JPush"
+    
+    #友盟基础依赖库
+    pod "UMCCommon"
+    pod "UMCSecurityPlugins"
+    #友盟统计SDK
+    pod "UMCAnalytics"
+
+    
+    
+    # Pods for TGWSCAPP
+    
+    target 'TGWSCAPPTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+    target 'TGWSCAPPUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+end

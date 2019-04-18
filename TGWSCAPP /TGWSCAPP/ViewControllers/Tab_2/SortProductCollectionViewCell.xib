@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SortProductCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="187.5" height="237.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187.5" height="237.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ezK-9X-Krn">
+                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="187.5" id="MU4-f2-tqm"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coG-yu-yix">
+                        <rect key="frame" x="0.0" y="187.5" width="187.5" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12盒/箱 婴儿家庭家用柔纸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foT-KW-MXH">
+                                <rect key="frame" x="10" y="0.0" width="167.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="8fS-Iv-55N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKw-jX-Bbq">
+                                <rect key="frame" x="10" y="25" width="167.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BVc-p6-NxY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.70588235294117641" green="0.11372549019607843" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="foT-KW-MXH" secondAttribute="trailing" constant="10" id="6K7-eI-bjr"/>
+                            <constraint firstItem="foT-KW-MXH" firstAttribute="top" secondItem="coG-yu-yix" secondAttribute="top" id="Gwh-OF-DGP"/>
+                            <constraint firstItem="xKw-jX-Bbq" firstAttribute="leading" secondItem="coG-yu-yix" secondAttribute="leading" constant="10" id="TDm-AX-FuH"/>
+                            <constraint firstItem="xKw-jX-Bbq" firstAttribute="top" secondItem="coG-yu-yix" secondAttribute="top" constant="25" id="apj-v3-2B6"/>
+                            <constraint firstAttribute="height" constant="50" id="jlQ-bz-a3a"/>
+                            <constraint firstAttribute="trailing" secondItem="xKw-jX-Bbq" secondAttribute="trailing" constant="10" id="kXH-yT-yId"/>
+                            <constraint firstItem="foT-KW-MXH" firstAttribute="leading" secondItem="coG-yu-yix" secondAttribute="leading" constant="10" id="tzx-3I-1UK"/>
+                        </constraints>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已售罄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-wI-XFX">
+                        <rect key="frame" x="69" y="69" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NxX-UX-wl1"/>
+                            <constraint firstAttribute="width" constant="50" id="ccH-K3-gkL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="泰国制造 香脆椰子卷 16元每盒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-Ff-bWG">
+                        <rect key="frame" x="10" y="152.5" width="170" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="PDH-1P-M5J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.29019607843137252" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ezK-9X-Krn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Ny-Cy-VJZ"/>
+                <constraint firstAttribute="trailing" secondItem="cfM-Ff-bWG" secondAttribute="trailing" constant="7.5" id="8bi-l3-WB4"/>
+                <constraint firstItem="cfM-Ff-bWG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="CwQ-VH-MEW"/>
+                <constraint firstItem="ezK-9X-Krn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Nrs-LV-Mou"/>
+                <constraint firstItem="mCe-wI-XFX" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="O0B-Jf-kcA"/>
+                <constraint firstAttribute="trailing" secondItem="ezK-9X-Krn" secondAttribute="trailing" id="SZg-K3-uRy"/>
+                <constraint firstItem="coG-yu-yix" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YnZ-5B-kIg"/>
+                <constraint firstItem="coG-yu-yix" firstAttribute="top" secondItem="ezK-9X-Krn" secondAttribute="bottom" id="hcu-b3-KLR"/>
+                <constraint firstAttribute="trailing" secondItem="coG-yu-yix" secondAttribute="trailing" id="ioF-Od-Kzt"/>
+                <constraint firstItem="mCe-wI-XFX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="69" id="o4I-RR-wPH"/>
+                <constraint firstItem="coG-yu-yix" firstAttribute="top" secondItem="cfM-Ff-bWG" secondAttribute="bottom" constant="10" id="ufa-xH-Fc2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="priceLabel" destination="xKw-jX-Bbq" id="3nH-9i-0Ql"/>
+                <outlet property="productImgView" destination="ezK-9X-Krn" id="7Ub-Wz-oxe"/>
+                <outlet property="productNameLabel" destination="cfM-Ff-bWG" id="sS1-Nh-4qT"/>
+                <outlet property="productSubNameLabel" destination="foT-KW-MXH" id="5DJ-dy-VOQ"/>
+                <outlet property="selloutLabel" destination="mCe-wI-XFX" id="nnz-ZZ-rwC"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="53"/>
+        </collectionViewCell>
+    </objects>
+</document>

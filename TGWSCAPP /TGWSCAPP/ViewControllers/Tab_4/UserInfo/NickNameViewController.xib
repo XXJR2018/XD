@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NickNameViewController">
+            <connections>
+                <outlet property="layoutTop" destination="fHk-qk-YeY" id="WOj-0W-zd2"/>
+                <outlet property="nextBtn" destination="kxC-YN-8Lr" id="6vE-uK-QiT"/>
+                <outlet property="nickNameField" destination="HSg-oJ-69l" id="tnZ-Vr-IVb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIE-3g-egx">
+                    <rect key="frame" x="0.0" y="74" width="375" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的昵称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSg-oJ-69l">
+                            <rect key="frame" x="20" y="0.0" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="aYt-3E-afz"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9xM-Wa-O1P"/>
+                        <constraint firstAttribute="trailing" secondItem="HSg-oJ-69l" secondAttribute="trailing" constant="105" id="Ehf-SU-eKa"/>
+                        <constraint firstItem="HSg-oJ-69l" firstAttribute="leading" secondItem="VIE-3g-egx" secondAttribute="leading" constant="20" id="LbD-Mi-Epk"/>
+                        <constraint firstItem="HSg-oJ-69l" firstAttribute="top" secondItem="VIE-3g-egx" secondAttribute="top" id="Xgw-fz-g4K"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-YN-8Lr">
+                    <rect key="frame" x="20" y="170" width="335" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="j6i-96-6gh"/>
+                    </constraints>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" red="0.43921568630000002" green="0.2901960784" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextTouch:" destination="-1" eventType="touchUpInside" id="8ur-xZ-wPT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kxC-YN-8Lr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="8Z0-ZM-Zeo"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kxC-YN-8Lr" secondAttribute="trailing" constant="20" id="Ma7-4d-7tK"/>
+                <constraint firstItem="VIE-3g-egx" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="NAN-wv-F6b"/>
+                <constraint firstItem="kxC-YN-8Lr" firstAttribute="top" secondItem="VIE-3g-egx" secondAttribute="bottom" constant="46" id="YsQ-Jn-iem"/>
+                <constraint firstItem="VIE-3g-egx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="aRl-l0-b1h"/>
+                <constraint firstItem="VIE-3g-egx" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="54" id="fHk-qk-YeY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
