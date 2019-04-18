@@ -28,7 +28,7 @@ NSString *RSAPublickKey =
     }
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     NSString *currentVersion = [infoDic objectForKey:@"CFBundleShortVersionString"];
-    NSString *versionStr = [NSString stringWithFormat:@"walletIOS_tgwsc-%@",currentVersion];
+    NSString *versionStr = [NSString stringWithFormat:@"walletIOS_xd-%@",currentVersion];
     parame[@"appVersion"] = versionStr;
     
     NSLog(@"加密前的URL如下：");
